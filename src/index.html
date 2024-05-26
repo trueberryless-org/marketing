@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TBL</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="background">
+            <div>
+                <div class="container">
+                    <section class="section">Section 1</section>
+                    <section class="section">Section 2</section>
+                    <section class="section">Section 3</section>
+                    <section class="section">Section 4</section>
+                </div>
+                <button class="scroll-button prev-button">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="scroll-button next-button">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script>
+        <script>
+            VANTA.FOG({
+                el: "#background",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.0,
+                minWidth: 200.0,
+                blurFactor: 0.3,
+                speed: 0.9,
+                zoom: 1,
+            });
+        </script>
+    </body>
+</html>
